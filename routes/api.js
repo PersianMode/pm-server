@@ -255,6 +255,7 @@ router.post('/order/lost', apiResponse('TicketAction', 'lostReport', true, ['bod
 
 
 // Order => api's used by offline system
+router.post('/order/ticket/transfer', apiResponse('Offline', 'transferOrderLine', true, ['body', 'user'], [_const.ACCESS_LEVEL.HubClerk, _const.ACCESS_LEVEL.ShopClerk]));
 router.post('/order/offline/invoiceResponse', apiResponse('Offline', 'invoiceResponse', true, ['body'], [_const.ACCESS_LEVEL.OfflineSystem]));
 router.post('/order/offline/transferResponse', apiResponse('Offline', 'transferResponse', true, ['body'], [_const.ACCESS_LEVEL.OfflineSystem]));
 router.post('/order/offline/returnResponse', apiResponse('Offline', 'returnResponse', true, ['body'], [_const.ACCESS_LEVEL.OfflineSystem]));
