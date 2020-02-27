@@ -248,13 +248,14 @@ router.post('/order/ticket', apiResponse('Ticket', 'getTickets', true, ['body'],
 router.post('/order/invoice', apiResponse('Offline', 'manualRequestInvoice', true, ['body.orderId', 'user'], [_const.ACCESS_LEVEL.HubClerk, _const.ACCESS_LEVEL.ShopClerk]));
 router.post('/order/return', apiResponse('TicketAction', 'requestReturn', false, ['body', 'user']));
 router.post('/order/cancel', apiResponse('Ticke' +
-  'tAction', 'requestCancel', false, ['body', 'user']));
+'tAction', 'requestCancel', false, ['body', 'user']));
 router.post('/order/mismatch', apiResponse('TicketAction', 'mismatchReport', true, ['body.trigger', 'user'], [_const.ACCESS_LEVEL.ShopClerk, _const.ACCESS_LEVEL.HubClerk]));
 router.post('/order/damage', apiResponse('TicketAction', 'damageInformed', true, ['body.orderId', 'body.orderLineId', 'body.type', 'user'], [_const.ACCESS_LEVEL.HubClerk]));
 router.post('/order/lost', apiResponse('TicketAction', 'lostReport', true, ['body.orderId', 'body.orderLineId', 'user'], [_const.ACCESS_LEVEL.HubClerk, _const.ACCESS_LEVEL.ShopClerk]));
 
 
 // Order => api's used by offline system
+router.post('/order/ticket/transfer', apiResponse('Offline', 'transferOrderLine', true, ['body', 'user'], [_const.ACCESS_LEVEL.HubClerk, _const.ACCESS_LEVEL.ShopClerk]));
 router.post('/order/offline/invoiceResponse', apiResponse('Offline', 'invoiceResponse', true, ['body'], [_const.ACCESS_LEVEL.OfflineSystem]));
 router.post('/order/offline/transferResponse', apiResponse('Offline', 'transferResponse', true, ['body'], [_const.ACCESS_LEVEL.OfflineSystem]));
 router.post('/order/offline/returnResponse', apiResponse('Offline', 'returnResponse', true, ['body'], [_const.ACCESS_LEVEL.OfflineSystem]));
