@@ -11,7 +11,7 @@
     "bcrypt-nodejs": "0.0.3",
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.3",
-    "bson": "^1.0.5",
+    "bson": "^1.1.4",
     "cli-color": "^1.1.0",
     "color-name": "^1.1.4",
     "compression": "^1.7.2",
