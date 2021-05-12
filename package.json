@@ -43,7 +43,7 @@
     "node-cron": "^1.2.1",
     "node-datetime": "^2.0.6",
     "node-rsa": "^1.0.1",
-    "nodemailer": "^4.6.4",
+    "nodemailer": "^6.4.16",
     "ntcjs": "^1.1.2",
     "passport": "^0.3.2",
     "passport-google-oauth": "^1.0.0",
