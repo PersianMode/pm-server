@@ -74,7 +74,7 @@
     "jasmine-node": "^3.0.0",
     "jasmine-spec-reporter": "^4.2.1",
     "rimraf": "^2.6.2",
-    "shelljs": "^0.8.1",
+    "shelljs": "^0.8.5",
     "socket.io-client": "^2.1.0"
   }
 }
