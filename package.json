@@ -32,7 +32,7 @@
     "jalali-moment": "^2.1.8",
     "jimp": "^0.2.28",
     "jsonexport": "^2.2.0",
-    "jsonwebtoken": "8.1.1",
+    "jsonwebtoken": "9.0.0",
     "lodash": "^4.17.11",
     "mailgun-js": "^0.22.0",
     "moment": "^2.22.1",
